@@ -1,0 +1,41 @@
+local whitelist = {
+	--BOSS
+	"KayTPS",
+	"accffosl",
+	"Ihave30FPSinroblox"
+	"AFCSTREAMINGNPC"
+	--USSL will remove after tmr 3am
+	"noobneedpet125",
+	"Emmxlxoo",
+}
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Function to check if the player is in the whitelist
+local function isWhitelisted()
+	for _, username in ipairs(whitelist) do
+		if player.Name == username then
+			return true
+		end
+	end
+	return false
+end
+
+-- Function to kick or crash if not whitelisted
+local function BuyOnDiscord()
+	if not isWhitelisted() then
+		while true do
+			pcall(function()
+				wait()
+				print("You are not whitelisted to use this feature, buy this via _kaygoated on discord.")
+				player:Kick("You are not whitelisted to use this feature, buy this via _kaygoated on discord.")
+			end)
+		end
+		local crash = nil
+		crash()
+	end
+end
+
+-- Call the kick function at the start of the script
+BuyOnDiscord()
