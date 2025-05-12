@@ -1,13 +1,13 @@
 local whitelist = {
 	--BOSS
 	"KayTPS",
-	"accffosl",
+	"FromAsiaisHa",
 	"Ihave30FPSinroblox",
-	"AFCSTREAMINGNPC",
 	"OP51E",
-	--USSL will remove after 2 week
+	--USSL
 	"noobneedpet125",
 	"Emmxlxoo",
+	"lx_causa",
 }
 
 local Players = game:GetService("Players")
