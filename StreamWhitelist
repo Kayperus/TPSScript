@@ -7,6 +7,7 @@ local whitelist = {
 	--USSL
 	"Emmxlxoo",
 	"lx_causa",
+	"guxprz",
 }
 
 local Players = game:GetService("Players")
