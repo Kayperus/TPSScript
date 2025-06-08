@@ -1,10 +1,10 @@
 local whitelist = {
-	--BOSS
+	-- BOSS
 	"KayTPS",
 	"Ihave30FPSinroblox",
 	"JanuaryerFastFlag",
 	"OP51E",
-	--USSL
+	-- USSL
 	"Emmxlxoo",
 	"lx_causa",
 	"guxprz",
@@ -19,7 +19,6 @@ local whitelist = {
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
--- Function to check if the player is in the whitelist
 local function isWhitelisted()
 	for _, username in ipairs(whitelist) do
 		if player.Name == username then
@@ -29,20 +28,14 @@ local function isWhitelisted()
 	return false
 end
 
--- Function to kick or crash if not whitelisted
 local function BuyOnDiscord()
 	if not isWhitelisted() then
-		while true do
-			pcall(function()
-				wait()
-				print("You are not whitelisted to use this feature, buy this via _kaygoated on discord.")
-				player:Kick("You are not whitelisted to use this feature, buy this via _kaygoated on discord.")
-			end)
-		end
-		local crash = nil
-		crash()
+		player:Kick("You are not whitelisted to use this feature, buy this via _kaygoated on Discord.")
+		task.wait(0.2)
+		-- Hard crash
+		local destroy = nil
+		destroy()
 	end
 end
 
--- Call the kick function at the start of the script
 BuyOnDiscord()
