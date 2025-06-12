@@ -5,15 +5,6 @@ local whitelist = {
 	"JanuaryerFastFlag", 
 	"OP51E",
 	--USSL
-	"Emmxlxoo",
-	"lx_causa",
-	"guxprz",
-	"sonekote5",
-	"TheAirAlz",
-	"888_Luixfer",
-	"youngodimforyou",
-	"katzussl",
-	"Cheseegezuka",
 }
 
 local Players = game:GetService("Players")
