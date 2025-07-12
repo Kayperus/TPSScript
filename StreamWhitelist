@@ -3,7 +3,7 @@ local whitelist = {
 	"KayTPS",
 	"Ihave30FPSinroblox",
 	--USSL
-
+	"shanefreecam",
 }
 
 local Players = game:GetService("Players")
