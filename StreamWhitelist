@@ -9,7 +9,6 @@ local whitelist = {
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 
--- Function to check if the player is in the whitelist
 local function isWhitelisted()
 	for _, username in ipairs(whitelist) do
 		if player.Name == username then
@@ -18,8 +17,6 @@ local function isWhitelisted()
 	end
 	return false
 end
-
--- Function to kick or crash if not whitelisted
 local function BuyOnDiscord()
 	if not isWhitelisted() then
 		while true do
@@ -33,6 +30,4 @@ local function BuyOnDiscord()
 		crash()
 	end
 end
-
--- Call the kick function at the start of the script
 BuyOnDiscord()
