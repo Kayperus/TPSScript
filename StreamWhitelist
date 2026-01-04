@@ -1,10 +1,10 @@
 local whitelist = {
 	--BOSS
 	"KayTPS",
-	"huyhoan199123",
 	"Ihave30FPSinroblox",
 	--USSL
 	"shanefreecam",
+	"huyhoan199123",
 }
 
 local Players = game:GetService("Players")
