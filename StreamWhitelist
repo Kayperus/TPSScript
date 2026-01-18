@@ -4,7 +4,6 @@ local whitelist = {
 	"Ihave30FPSinroblox",
 	--USSL
 	"shanefreecam",
-	"huyhoan199123",
 }
 
 local Players = game:GetService("Players")
