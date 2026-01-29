@@ -3,7 +3,10 @@ local whitelist = {
 	"KayTPS",
 	"Ihave30FPSinroblox",
 	--USSL
-	"shanefreecam",
+	"hemoreferee12",
+	"zReinaldoReffery",
+	"ARGENTINACAMPEONF",
+	"luisfernando575478mn",
 }
 
 local Players = game:GetService("Players")
