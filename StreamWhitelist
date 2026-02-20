@@ -7,7 +7,7 @@ local whitelist = {
 	"zReinaldoReffery",
 	"ARGENTINACAMPEONF",
 	"luisfernando575478mn",
-	"arbitraje123",
+	"frecamdos",
 }
 
 local Players = game:GetService("Players")
